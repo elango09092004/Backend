@@ -17,7 +17,7 @@ function Login() {
       
       if (res.data.status==true) {
         console.log("Login successful");
-        window.location.href = '/Home';
+       // window.location.href = '/Home';
       } else {
         alert("invalid credentials");
         console.log("Login failed");

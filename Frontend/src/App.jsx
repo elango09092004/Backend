@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Signup from './signup.jsx'
 import Login from './login.jsx'
-import Home from './Home.jsx'
+//import Home from './Home.jsx'
 
 
 import axios from 'axios';
@@ -17,7 +17,7 @@ function App() {
         <Routes>
         <Route path='/signup' element={<Signup />} />
         <Route path='/' element={<Login />} />
-        <Route path='Home' element={<Home/>}/>
+        {/* <Route path='Home' element={<Home/>}/> */}
        </Routes>
 
     </>
