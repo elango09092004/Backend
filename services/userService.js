@@ -1,10 +1,10 @@
 const userModel = require('../models/userModel');
 
 class userService {
-    static async userRegistration(username, email, password) {
+    static async userRegistration(username, email, password,phoneno,city) {
         try {
             
-            if (!username || !email) {
+            if (!username || !email ||  !phoneno || !city) {
                 
                return false;
             }
@@ -28,7 +28,7 @@ class userService {
             }
 
         
-            const createUser = new userModel({ username, email, password });
+            const createUser = new userModel({ username, email, password,phoneno,city });
 
   
             await createUser.save();

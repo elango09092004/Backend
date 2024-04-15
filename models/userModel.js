@@ -14,6 +14,15 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
+    },
+
+    phoneno:{
+        type :Number,
+        required :true
+    },
+    city :{
+        type:String,
+        required:true
     }
 });
 const userModel = mongoose.model('signup', userSchema);

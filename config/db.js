@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const url = "mongodb://localhost:27017/monkeytype"
+const url = "mongodb://localhost:27017/Food_backend"
 try {
     mongoose.connect(
         url

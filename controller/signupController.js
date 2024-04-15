@@ -2,11 +2,11 @@ const signUpService = require('../services/userService');
 
  exports.register = async(req,res) =>{
     try{
-        const {username,email,password} = req.body;
+        const {username,email,password,phoneno,city} = req.body;
        
-        const success= await signUpService.userRegistration(username,email,password);
+        const success= await signUpService.userRegistration(username,email,password,phoneno,city);
        
-       
+      
         res.send(success);
         
     }catch(err){
